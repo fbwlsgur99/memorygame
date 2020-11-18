@@ -4,7 +4,7 @@ var gamePattern = [];
 var started = false;
 var level = 0;
 
-$(document).keypress(function(){
+$("h1").click(function(){
 
 if (!started) {
 
@@ -44,7 +44,7 @@ function checkAnswer(currentLevel) {
       $("body").removeClass("game-over");
     }, 100);
 
-    $("h1").text("Game over SooDyoon, Press Any Key to Restart")
+    $("h1").text("Game over SooDyoon, Press Click Me to Restart")
 
     var audio = new Audio("sounds/wrong.mp3");
     audio.play();
